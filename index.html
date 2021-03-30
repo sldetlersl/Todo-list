@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" >
+    <link rel="icon" href="icon/iconForHead.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Your ToDo</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">ToDo List</h1>
+    </header>
+    <nav class="navbar">
+        <form class="navbar-search">
+            <button class="navbar-search__button" id="navbar-search__button" type="button"></button>
+            <input class="navbar-search__placeholder" id="navbar-search__placeholder" type="search" placeholder="Поиск" value="">
+        </form>
+    </nav>
+    <main class="wrapper-todo">
+
+    </main>
+    <div class="wrapper-button__added-reminder">
+        <button class="button__added-reminder"></button>
+    </div>
+
+    <div class="wrapper-modal" id="wrapper-modal">
+        <div class="modal">
+            <input class="modal-title" type="text" placeholder="Введите заголовок" value="" maxlength="30"></input>
+            <textarea class="modal-description" type="text" placeholder="Текст заметки"></textarea>
+            <div class="wrapper-button">
+                <button class="button-create button-closes btn-modal" type="button">Создать</button>
+                <button class="button-close btn-modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper-modal__remove">
+        <div class="modal modal-remove">
+            <h3>Действительно хотите удалить заметку?</h3>
+            <button id="button-closes" class="button-delete button-close btn-modal data-delete" type="button">Удалить</button>
+            <button id="button-closes" class="button-close btn-modal" type="button">Закрыть</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
